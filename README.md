@@ -23,3 +23,13 @@ sudo dpkg-reconfigure slapd
 sudo slapcat
 ```
 Источник https://mnorin.com/ldap-ustanovka-i-nastrojka-ldap-servera.html
+
+Установка зависимостей и веба
+```
+sudo apt install apache2 php php-cgi libapache2-mod-php php-mbstring php-common php-pear -y
+sudo apt install ldap-account-manager -y
+sudo a2enconf php*-cgi
+sudo systemctl restart apache2
+sudo systemctl enable apache2
+sudo systemctl status apache2
+```
