@@ -33,3 +33,8 @@ sudo systemctl restart apache2
 sudo systemctl enable apache2
 sudo systemctl status apache2
 ```
+
+## Настройка веб интерфеса
+Заходим на http://domain/lam. В правом верхнем углу заходим в LAM configuration -> Edit general settings (пароль для входа: lam), в самом низу меняем пароль и сохраняем. Далее LAM configuration -> Edit server profiles (пароль для входа: lam), в Server settings -> List of valid users меняем Manager на admin и свой домен, в Tool settings указываем домен и внизу задаем пароль сохраняем. Переходим во вкладку Account types здесь также указываем свой домен и можно поменять People на Department чтобы делить пользователей на отделы и сохраняем. Переходим во вкладку Modules и добавляем у пользователей ssh ключи и hosts, у групп добавляем hosts сохраняем. Далее логинимся с паролем от ldap и создаем записи
+## Создание групп и пользователей
+
