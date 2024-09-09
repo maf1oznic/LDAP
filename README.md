@@ -132,4 +132,4 @@ sudo systemctl restart sssd
 sudo sss_ssh_authorizedkeys username
 ```
 Можно тестировать подключение.
-Мануал не закончен, требует многих доработок(SSL, sssd conf).
+Мануал не закончен, требует многих доработок(SSL, sssd conf, sudo).
