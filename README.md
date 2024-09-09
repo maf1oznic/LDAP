@@ -83,7 +83,7 @@ sudo systemctl restart ssh
 ```
 Создайте файл /etc/sssd/sssd.conf (Нужно поменять данные для подключения к LDAP по примеру)
 ```
-sssd]
+[sssd]
 config_file_version = 2
 reconnection_retries = 3
 domains = dam-ldap.oraclesiebelcrm.com
