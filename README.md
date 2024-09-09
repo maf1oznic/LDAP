@@ -5,7 +5,7 @@
 ```
 sudo apt install slapd ldap-utils
 ```
-Процедура установки запросит у вас пароль администратора. На данный момент его можно оставить пустым, поскольку мы немедленно перенастроим slapd установку.
+Процедура установки запросит пароль админа. На данный момент его можно оставить пустым, поскольку мы немедленно перенастроим slapd установку.
 ```
 sudo dpkg-reconfigure slapd
 ```
@@ -22,9 +22,10 @@ sudo dpkg-reconfigure slapd
 ```
 sudo slapcat
 ```
-Источник https://mnorin.com/ldap-ustanovka-i-nastrojka-ldap-servera.html
-https://github.com/johnstonjs/easyldap
-
+Импорт схемы ssh ключа:
+```
+sudo ldapadd -Q -Y EXTERNAL -H ldapi:/// -f openssh-lpk.ldif
+```
 Установка зависимостей и веба
 ```
 sudo apt install apache2 php php-cgi libapache2-mod-php php-mbstring php-common php-pear -y
